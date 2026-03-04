@@ -17,39 +17,49 @@ The model captures relationships between core business entities and ensures that
 
 # Conceptual Model Design
 
-- The conceptual model includes 10+ business entities, representing different components of the furniture store ecosystem.
+- The conceptual model contains 16 entities, including:
 
-- Key Entities
+### Core entities:
 
-Customer – stores customer information and contact details
+- Customer: CustomerID (PK), CustomerName, ContactName, CustomerPhone, CustomerAddress
 
-Customer Type – categorises customers based on classification
+- Customer Type: CustomerTypeID (PK), CustomerTypeName, CustomerTypeDescription
 
-Furniture Item – represents products available for sale
+- Furniture Item: FurnitureItemID (PK), ReferenceString, ItemCostPrice, ItemSalePrice, ItemDescription, ItemLocationString, ItemStockQuantity
 
-Category – groups furniture items into logical categories
+- Category (parent-child relationships): CategoryID (PK), CategoryName, CategoryDescription
 
-Product Type – defines specific product classifications
+- Product Type: ProductTypeID (PK), ProductName
 
-Request – represents customer requests for product quotations
+- Request: RequestID (PK), RequestDate, RequestTime, RequestDescription
 
-Quote – generated quotation based on requested items
+- Quote: QuoteID (PK), QuoteDate, QuoteTime, QuoteDescription
 
-Order – records confirmed customer purchases
+- Order: OrderID (PK), OrderDate, OrderTime, DeliveryInstructions
 
-Payment – manages payment transactions
+- Payment: PaymentID (PK), PaidAmount, PaymentDate, PaymentTime, PaymentMethod, ExternalRefNo
 
-Resource – represents operational resources required to fulfil requests
+- Staff: EmployeeID (PK), EmployeeName, EmployeeRole, EmploymentType
 
-Supporting transactional entities include:
+- Resource: ResourceID (PK), ResourceName, ResourceDescription
 
-Requested Item (Weak Entity)
+- Resource Type: ResourceTypeID (PK), ResourceTypeName, ResourceTypeDescription
 
-Quote Item
+### Supporting entities
 
-Order Item
+- Requested Item
 
-Payment Allocation
+- Quote Item
+
+- Order Item
+
+- Quoted Order Item
+
+- Furniture Order Item
+
+- Requested Item Resource
+
+- Payment Allocation
 
 These entities help represent transaction-level relationships and dependencies within the system.
 
