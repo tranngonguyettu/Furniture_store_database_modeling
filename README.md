@@ -63,6 +63,8 @@ The model captures relationships between core business entities and ensures that
 
 These entities help represent transaction-level relationships and dependencies within the system.
 
+<img width="1460" height="866" alt="Image" src="https://github.com/user-attachments/assets/06f96dd5-9f8b-49e0-9cd5-f1e5d1909c18" />
+
 # Data Relationships
 
 Customer → Request → Quote → Order
