@@ -1,11 +1,11 @@
 # Furniture Store Database Conceptual Model
-# Project Overview
+# 📌 Project Overview
 
 This project focuses on designing a conceptual database model for a furniture store management system. The objective is to translate real-world business processes into a structured data model that supports key operational activities such as product management, customer orders, quotations, payments, and inventory tracking.
 
 The model captures relationships between core business entities and ensures that the system reflects realistic business rules and workflows used in retail operations.
 
-# Objectives
+# 🧠 Objectives
 
 - Translate real-world business rules into a conceptual data structure
 
@@ -15,7 +15,7 @@ The model captures relationships between core business entities and ensures that
 
 - Support essential retail business processes such as order placement, quotation generation, and payment allocation
 
-# Conceptual Model Design
+# 📊 Conceptual Model Design
 
 - The conceptual model contains 16 entities, including:
 
@@ -65,7 +65,7 @@ These entities help represent transaction-level relationships and dependencies w
 
 <img width="1460" height="866" alt="Image" src="https://github.com/user-attachments/assets/06f96dd5-9f8b-49e0-9cd5-f1e5d1909c18" />
 
-# Data Relationships
+# 🖇️ Data Relationships
 
 Customer → Request → Quote → Order
 
@@ -77,7 +77,7 @@ Order → Payment → Payment Allocation
 
 This relational structure supports transaction tracking, inventory management, and financial records.
 
-# Tools Used
+# 🔎 Tools Used
 
 Draw.io – Database conceptual modelling
 
