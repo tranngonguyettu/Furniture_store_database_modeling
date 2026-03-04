@@ -17,8 +17,6 @@ The model captures relationships between core business entities and ensures that
 
 # 📊 Conceptual Model Design
 
-- The conceptual model contains 16 entities, including:
-
 ### Core entities:
 
 - Customer: CustomerID (PK), CustomerName, ContactName, CustomerPhone, CustomerAddress
